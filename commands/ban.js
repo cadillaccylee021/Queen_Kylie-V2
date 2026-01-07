@@ -10,7 +10,7 @@ async function banCommand(sock, chatId, message) {
         const senderId = message.key.participant || message.key.remoteJid;
         const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
         if (!isBotAdmin) {
-            await sock.sendMessage(chatId, { text: 'Please make the bot an admin to use .ban', ...channelInfo }, { quoted: message });
+            await sock.sendMessage(chatId, { text: 'Please make Kylie admin to use the .ban command', ...channelInfo }, { quoted: message });
             return;
         }
         if (!isSenderAdmin && !message.key.fromMe) {
