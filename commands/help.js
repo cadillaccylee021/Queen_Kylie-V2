@@ -5,17 +5,16 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'KnightBot-MD'}*  
-   Version: *${settings.version || '3.0.0'}*
-   by ${settings.botOwner || 'Mr Unique Hacker'}
+   *👸 ${settings.botName || 'QUEEN_KYLIE-V2'}* 
+   Version: *${settings.version || '2.0.0'}*
+   by ${settings.botOwner || 'KynexorTechnologies'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
-*Available Commands:*
+❤️👸𝗞𝗬𝗟𝗜𝗘_𝗠𝗘𝗡𝗨👸❤️
 
-╔═══════════════════╗
-🌐 *General Commands*:
-║ ➤ .help or .menu
+╔═🌐*GENERAL*═╗
+║ ➤ .menu/help
 ║ ➤ .ping
 ║ ➤ .alive
 ║ ➤ .tts <text>
@@ -37,8 +36,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .url
 ╚═══════════════════╝ 
 
-╔═══════════════════╗
-👮‍♂️ *Admin Commands*:
+╔═👸*GROUP/ADMIN*═╗
 ║ ➤ .ban @user
 ║ ➤ .promote @user
 ║ ➤ .demote @user
@@ -65,8 +63,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .setgpp (reply to image)
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🔒 *Owner Commands*:
+╔═👸*OWNER*═╗
 ║ ➤ .mode <public/private>
 ║ ➤ .clearsession
 ║ ➤ .antidelete
@@ -86,8 +83,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .mention <on/off>
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🎨 *Image/Sticker Commands*:
+╔═🎨*IMAGE/STICKER*═╗
 ║ ➤ .blur <image>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
@@ -102,8 +98,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .igsc <insta link>
 ╚═══════════════════╝  
 
-╔═══════════════════╗
-🖼️ *Pies Commands*:
+╔═🖼️*PIES*═╗
 ║ ➤ .pies <country>
 ║ ➤ .china 
 ║ ➤ .indonesia 
@@ -112,8 +107,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .hijab
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🎮 *Game Commands*:
+╔═🎮*GAME*═╗
 ║ ➤ .tictactoe @user
 ║ ➤ .hangman
 ║ ➤ .guess <letter>
@@ -123,8 +117,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .dare
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🤖 *AI Commands*:
+╔═🤖*GPT*═╗
 ║ ➤ .gpt <question>
 ║ ➤ .gemini <question>
 ║ ➤ .imagine <prompt>
@@ -132,8 +125,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .sora <prompt>
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🎯 *Fun Commands*:
+╔═🎯 *FUN*═╗ 
 ║ ➤ .compliment @user
 ║ ➤ .insult @user
 ║ ➤ .flirt 
@@ -147,8 +139,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .stupid @user [text]
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🔤 *Textmaker*:
+╔═🔤*TEXTMAKER*═╗ 
 ║ ➤ .metallic <text>
 ║ ➤ .ice <text>
 ║ ➤ .snow <text>
@@ -169,8 +160,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .fire <text>
 ╚═══════════════════╝
 
-╔═══════════════════╗
-📥 *Downloader*:
+╔═📥*DOWNLOAD*═╗
 ║ ➤ .play <song_name>
 ║ ➤ .song <song_name>
 ║ ➤ .spotify <query>
@@ -181,8 +171,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .ytmp4 <Link>
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🧩 *MISC*:
+╔═🧩*MISC*═╗
 ║ ➤ .heart
 ║ ➤ .horny
 ║ ➤ .circle
@@ -201,8 +190,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .triggered
 ╚═══════════════════╝
 
-╔═══════════════════╗
-🖼️ *ANIME*:
+╔═🖼️*ANIME*═╗
 ║ ➤ .nom 
 ║ ➤ .poke 
 ║ ➤ .cry 
@@ -213,14 +201,15 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .facepalm 
 ╚═══════════════════╝
 
-╔═══════════════════╗
-💻 *Github Commands:*
+╔═*GITHUB*═╗ 
 ║ ➤ .git
 ║ ➤ .github
 ║ ➤ .sc
 ║ ➤ .script
 ║ ➤ .repo
 ╚═══════════════════╝
+_This is QUEEN_KYLIE-V2 👸❤️. Developed with Love by KynexorTechnologies._
+> sircyleeobsessedwithhisteddybear
 
 Join our channel for updates:`;
 
