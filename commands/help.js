@@ -209,6 +209,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 _This is QUEEN_KYLIE-V2 👸❤️. Developed with Love by KynexorTechnologies._
+
 > sircyleeobsessedwithhisteddybear
 
 Join our channel for updates:`;
@@ -226,8 +227,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterJid: '',
+                        newsletterName: 'sircyleeobsessedwithhisteddybear',
                         serverMessageId: -1
                     }
                 }
@@ -240,8 +241,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD by Mr Unique Hacker',
+                        newsletterJid: '',
+                        newsletterName: 'sircyleeobsessedwithhisteddybear',
                         serverMessageId: -1
                     } 
                 }
